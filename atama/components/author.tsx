@@ -1,3 +1,5 @@
+import styles from "./author.module.css";
+
 export function Author({
   name,
   bio,
@@ -8,8 +10,8 @@ export function Author({
   atama: object;
 }) {
   return (
-    <div {...atama}>
-      <strong>{name}</strong>
+    <div {...atama} className={styles.author}>
+      <h3 className={styles.heading}>{name}</h3>
       <p>{bio}</p>
     </div>
   );
