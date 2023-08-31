@@ -7,6 +7,11 @@ export const fetcher = new FetcherAtama({
   workspaceId: process.env.ATAMA_WORKSPACE_ID as string,
 });
 
+export type MetaData = {
+  seoTitle: string;
+  seoDescription: string;
+};
+
 export const blueprints = {
   page: Page,
 };
